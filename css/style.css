@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans", sans-serif;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a, ul, li{
+    display: block;
+}
+body{
+    background: url("../image/screen.png") no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    background: rgba(0, 91, 193, 0.6);
+    height: 12.5vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 12.5vh;
+}
+nav a{
+    padding: 11px;
+    float: left;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.menu-item a{
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+.heading{
+    width: 610px;
+    height: 87.5vh;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    padding: 65px 0;
+}
+.heading:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0, 91, 193, 0.6);
+    width: 444px;
+    height: 100%;
+    animation: light 5s infinite linear alternate;
+    z-index: -1;
+}
+@keyframes light {
+     from {
+         transform: translateX(-180%);
+     }
+     to {
+         transform: translateX(150%);
+     }
+}
+/*@keyframes light {*/
+/*    from {*/
+/*        transform:  ;*/
+/*    }*/
+/*    to {*/
+/*        left: 100%;*/
+/*    }*/
+/*}*/
+.heading-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.01em;
+    color: #fff;
+
+}
+.heading-text{
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin: 40px 0;
+}
+.btn{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 15px 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    animation: change-color 1.5s infinite;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+@keyframes change-color {
+    15% {
+        background: linear-gradient(45deg, red, blue);
+    }
+    30% {
+        background: linear-gradient(135deg, orange, orange 60%, cyan);
+    }
+    50% {
+        background: linear-gradient(#e66465, #9198e5);
+    }
+    65% {
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    80% {
+        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    header{
+        height: 10vh;
+    }
+    nav{
+        height: 10vh;
+    }
+    .menu-item a{
+        margin: 0 7px;
+        font-size: 12px;
+    }
+    .heading{
+        height: 90vh;
+        z-index: 1;
+        padding: 165px 0;
+        text-align: center;
+    }
+    .heading:before{
+        content: "";
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        height: 10vh;
+    }
+    nav{
+        height: 10vh;
+    }
+    .menu-item a{
+        margin: 0 7px;
+        font-size: 12px;
+    }
+    .heading{
+        height: 90vh;
+        z-index: 1;
+        padding: 165px 0;
+        text-align: center;
+    }
+    .heading:before{
+        content: "";
+        width: 300px;
+    }
+}
